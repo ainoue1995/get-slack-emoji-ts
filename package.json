@@ -1,0 +1,35 @@
+{
+  "name": "college-coffee-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "dev": "tsc && node ./build/index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.11.2",
+    "@types/request": "^2.48.7",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@slack/web-api": "^6.4.0",
+    "csv": "^5.5.3",
+    "csv-stringify": "^5.6.5",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  }
+}
